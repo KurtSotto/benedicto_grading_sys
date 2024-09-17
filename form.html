@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Grade Calculator</h2>
+
+<table id="gradeTable">
+    <tr>
+        <th>Subject</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>Final</th>
+        <th>Unit</th>
+        <th>Passed or Failed</th>
+    </tr>
+    <tr>
+        <td>
+            <select id="subject1" onchange="subjectSelected(this)">
+                <option value="" selected disabled>Select Subject</option>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+            </select>
+        </td>
+        <td><input type="number" id="q1_1" value=""></td>
+        <td><input type="number" id="q2_1" value=""></td>
+        <td><input type="number" id="q3_1" value=""></td>
+        <td><input type="number" id="q4_1" value=""></td>
+        <td><input type="text" id="final1" readonly></td>
+        <td><input type="text" id="unit1"></td>
+        <td><input type="text" id="status1" readonly></td>
+    </tr>
+</table>
+
+<button onclick="calculateGrade()">Calculate</button>
+
+<script>
+    let subjectCount = 1;
+
+    function calculateGrade() {
+        for (let i = 1; i <= subjectCount; i++) {
+            let q1 = parseFloat(document.getElementById(`q1_${i}`).value) || 0;
+            let q2 = parseFloat(document.getElementById(`q2_${i}`).value) || 0;
+            let q3 = parseFloat(document.getElementById(`q3_${i}`).value) || 0;
+            let q4 = parseFloat(document.getElementById(`q4_${i}`).value) || 0;
+
+            let finalScore = (q1 + q2 + q3 + q4) / 4;
+            document.getElementById(`final${i}`).value = finalScore.toFixed(1);
+
+            let status = finalScore >= 60 ? "PASSED" : "FAILED";
+            document.getElementById(`status${i}`).value = status;
+        }
+    }
+
+    function subjectSelected(selectElement) {
+        // Add a new subject row only if a subject is selected
+        if (selectElement.value) {
+            subjectCount++;
+
+            // Create a new row in the table
+            let newRow = document.createElement('tr');
+
+            newRow.innerHTML = `
+                <td>
+                    <select id="subject${subjectCount}" onchange="subjectSelected(this)">
+                        <option value="" selected disabled>Select Subject</option>
+                        <option value="English">English</option>
+                        <option value="Math">Math</option>
+                        <option value="Science">Science</option>
+                    </select>
+                </td>
+                <td><input type="number" id="q1_${subjectCount}" value=""></td>
+                <td><input type="number" id="q2_${subjectCount}" value=""></td>
+                <td><input type="number" id="q3_${subjectCount}" value=""></td>
+                <td><input type="number" id="q4_${subjectCount}" value=""></td>
+                <td><input type="text" id="final${subjectCount}" readonly></td>
+                <td><input type="text" id="unit${subjectCount}"></td>
+                <td><input type="text" id="status${subjectCount}" readonly></td>
+            `;
+
+            document.getElementById('gradeTable').appendChild(newRow);
+        }
+    }
+</script>
+
+</body>
+</html>
