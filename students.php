@@ -22,7 +22,7 @@
         <th scope="col">ID</th>
         <th scope="col">First</th>
         <th scope="col">Last</th>
-        <th scope="col">Level</th>
+        <th scope="col">Class</th>
         <th scope="col">Action</th>
         </tr>
     </thead>
@@ -31,7 +31,7 @@
         <th scope="row">1</th>
         <td>Mark</td>
         <td>Otto</td>
-        <td>2</td>
+        <td>2 - kamunggay</td>
         <td>
             <div class="d-flex gap-1">
                 <button class="btn btn-primary"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i></button>
@@ -43,7 +43,7 @@
         <th scope="row">2</th>
         <td>Jacob</td>  
         <td>Thornton</td>
-        <td>6</td>
+        <td>6 - alugbati</td>
         <td>
             <div class="d-flex gap-1">
                 <button class="btn btn-primary"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i></button>
@@ -54,7 +54,7 @@
         <tr>
         <th scope="row">3</th>
         <td colspan="2">Larry the Bird</td>
-        <td>10</td>
+        <td>10 - kalabasa</td>
         <td>
             <div class="d-flex gap-1">
                 <button class="btn btn-primary"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i></button>
@@ -63,32 +63,6 @@
         </td>
         </tr>
 
-        </tr>
-        <tr>
-        <th scope="row">4</th>
-        <td>Kort</td>
-        <td>otenciano</td>
-        <td>7</td>
-        <td>
-            <div class="d-flex gap-1">
-                <button class="btn btn-primary"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i></button>
-                <button class="btn btn-danger"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
-            </div>
-        </td>
-        </tr>
-
-        </tr>
-        <tr>
-        <th scope="row">5</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>10</td>
-        <td>
-            <div class="d-flex gap-1">
-                <button class="btn btn-primary"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i></button>
-                <button class="btn btn-danger"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
-            </div>
-        </td>
-        </tr>
     </tbody>
     </table>
     
@@ -96,7 +70,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Add a madafaking student </h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Add a student </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -125,10 +99,6 @@
                 </div>
                 </form>
             </div>
-        <!-- <div class="modal-footer"> -->
-            
-            <!-- <button type="button" class="btn btn-primary">Understood</button> -->
-        <!-- </div> -->
         </div>
     </div>
     </div>

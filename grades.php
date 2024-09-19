@@ -20,7 +20,7 @@
         <th scope="col">ID</th>
         <th scope="col">First</th>
         <th scope="col">Last</th>
-        <th scope="col">Level</th>
+        <th scope="col">Class</th>
         <th scope="col">Subjects</th>
         <th scope="col">General Average</th>
         <th scope="col">Action</th>
@@ -32,8 +32,8 @@
         <td>Kurt</td>
         <td>Cagulang</td>
         <td>2</td>
-        <td>4</td>
-        <td>90.14</td>
+        <td>3</td>
+        <td>90</td>
         <td>
             <div class="d-flex gap-1">
                 <a href="add-grade.php" class="btn btn-primary"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i></a>
@@ -61,7 +61,7 @@
         <th scope="row">3</th>
         <td>Larry </td>
         <td>the Bird</td>
-        <td>10</td>
+        <td>10 - kalabasa</td>
         <td>5</td>
         <td>87.50</td>
         <td>
@@ -73,38 +73,6 @@
         </td>
         </tr>
 
-        </tr>
-        <tr>
-        <th scope="row">4</th>
-        <td>Kort</td>
-        <td>otenciano</td>
-        <td>7</td>
-        <td>5</td>
-        <td>87.50</td>
-        <td>
-            <div class="d-flex gap-1">
-                <button class="btn btn-primary"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i></button>
-                <button class="btn btn-info"><i class="fa-solid fa-eye" style="color: #ffffff;"></i></button>
-                <button class="btn btn-danger"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
-            </div>
-        </td>
-        </tr>
-
-        </tr>
-        <tr>
-        <th scope="row">5</th>
-        <td>Cabagnot</td>
-        <td>Mamayotay</td>
-        <td>10</td>
-        <td>5</td>
-        <td>87.50</td>
-        <td>
-            <div class="d-flex gap-1">
-                <button class="btn btn-primary"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i></button>
-                <button class="btn btn-info"><i class="fa-solid fa-eye" style="color: #ffffff;"></i></button>
-                <button class="btn btn-danger"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
-            </div>
-        </td>
         </tr>
     </tbody>
     </table>

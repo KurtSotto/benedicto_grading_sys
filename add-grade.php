@@ -22,31 +22,79 @@
                 <div class="border border-1 border-secondary rounded p-2" >
                     1 | Kurt Cagulang
                 </div>
-                <small>Current Level: 2</small>
+                <small>Current class: 2 - sunflower</small>
+            </div>
+            
+            <div class="input-group mb-4">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select subject</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                <option value="english">English</option>
+            </select>
+                
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+
+                <button class="btn btn-primary">add</button>
             </div>
 
-            <div class="mb-4">
-                <strong for="">Subject</strong>
-                <select class="form-select" aria-label="Default select example" >
-                    <option selected>Open this select menu</option>
-                    <option value="1">Math</option>
-                    <option value="2">English</option>
-                    <option value="3">Bisaya</option>
-                </select>
-            </div>    
 
-            <div class="input-group">
-            <span class="fw-bold input-group-text">Quarter</span>
-                <small class="fw-bold">1st</small>
-                <input type="text" aria-label="First name" class="form-control" value="89">
-                <small class="fw-bold" for="">2nd</small>
-                <input type="text" aria-label="Last name" class="form-control" value="97">
-                <small class="fw-bold" for="">3rd</small>
-                <input type="text" aria-label="First name" class="form-control" value="78">
-                <small class="fw-bold" for="">4th</small>
-                <input type="text" aria-label="Last name" class="form-control" value="83">
-            </div>
-            <!-- <button type="submit" class="btn btn-primary">Save</button> -->
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Subject Code</th>
+                    <th scope="col">Subject Name</th>
+                    <th scope="col">1st Grading</th>
+                    <th scope="col">2nd Grading</th>
+                    <th scope="col">3rd Grading</th>
+                    <th scope="col">4th Grading</th>
+                    <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">1</th>
+                    <td>English</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>
+                        <button class="btn btn-danger"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td>Math</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>
+                        <button class="btn btn-danger"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td>Science</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>
+                        <button class="btn btn-danger"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fw-bold" colspan="5">Average</td>
+                        <td class="fw-bold">90</td>
+                    </tr>
+                </tbody>
+            </table>
 
             
             
